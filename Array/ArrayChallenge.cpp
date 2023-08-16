@@ -48,6 +48,26 @@
 //     return 0;
 // }
 
+// KADANE'S ALGORITHM
+// class Solution{
+//     public:
+//     long long maxSubarraySum(int arr[], int n){  
+//         // Your code here
+//         long max = INT_MIN;
+//         long sum = 0;
+//         for(int i=0;i<n;i++){
+//             sum += arr[i];
+//             if(sum>max){
+//                 max=sum;
+//             }
+//             if(sum<0){
+//                 sum=0;
+//             }
+//         }
+//         return max;
+//     }
+// };
+
 
 // MAXIMUM SUBARRAY LENGTH 2 
 // #include<iostream>

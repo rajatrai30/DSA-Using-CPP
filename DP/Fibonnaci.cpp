@@ -34,16 +34,16 @@ int dp[N];
 // }
 
 
-// USING BOTTOM UP APPROACH
-int main(){
-    int n;
-    cin>>n;
-    dp[0] = 0;
-    dp[1] = 0;
-    dp[2] = 1;
-    for(int i=3;i<=n;i++){
-        dp[i] = dp[i-1] + dp[i-2];
-    }
-    cout<<dp[n];
-    return 0;
-}
+// USING BOTTOM UP APPROACH (TABULATION APPROACH)
+// int main(){
+//     int n;
+//     cin>>n;
+//     dp[0] = 0;
+//     dp[1] = 0;
+//     dp[2] = 1;
+//     for(int i=3;i<=n;i++){
+//         dp[i] = dp[i-1] + dp[i-2];
+//     }
+//     cout<<dp[n];
+//     return 0;
+// }

@@ -1,0 +1,1 @@
+{"name":"Local: bfs","url":"d:\\RAJAT RAI\\Cplusplus DSA Practise\\Graphs\\bfs.cpp","tests":[{"id":1692205150033,"input":"7 7\n1 2\n1 3\n2 4\n2 5\n2 6\n2 7\n7 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\RAJAT RAI\\Cplusplus DSA Practise\\Graphs\\bfs.cpp","group":"local","local":true}

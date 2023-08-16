@@ -1,0 +1,1 @@
+{"name":"Local: LongestIncSubSeq","url":"d:\\RAJAT RAI\\Cplusplus DSA Practise\\DP\\LongestIncSubSeq.cpp","tests":[{"id":1692105277766,"input":"9\n10 22 9 33 21 50 52 60 80","output":"7"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\RAJAT RAI\\Cplusplus DSA Practise\\DP\\LongestIncSubSeq.cpp","group":"local","local":true}
