@@ -32,7 +32,6 @@ void makeCycle(node* &head, int pos){
 bool DetectCycle(node* &head){
     node* slow=head;
     node* fast=head;
-
     while(fast!=NULL && fast->next!=NULL){
         slow=slow->next;
         fast=fast->next->next;
@@ -88,11 +87,12 @@ node* ReverseRecursive(node* &head){
     if(head==NULL || head->next==NULL){
         return head;
     }
-    node* newhead = ReverseRecursive(head->next);
+    node* newNode = ReverseRecursive(head->next);
     head->next->next=head;
     head->next=NULL;
-    return newhead;
+    return newNode;
 }
+
 
 
 // REVERSE A LINKED LIST FUNCTION USING ITERATOR METHOD
@@ -158,8 +158,7 @@ void InsertAtHead(node* &head, int val){
 
 // INSERT AT TAIL
 void InsertAtTail(node* &head, int val){
-    node* n= new node(val);
-
+    node* n = new node(val);
     if(head==NULL){
         head=n;
         return;
@@ -192,8 +191,12 @@ int main()
     InsertAtTail(head,4);
     InsertAtTail(head,5);
     InsertAtTail(head,6);
+    // Display(head);
+    
 
-
+    // InsertAtHead(head,1);
+    // InsertAtHead(head,2);
+    // InsertAtHead(head,3);
     // InsertAtHead(head,4);
     // Display(head);
     // cout<<Search(head,4)<<endl;
@@ -215,17 +218,17 @@ int main()
     // Display(naya);
 
     // CYCLE IN LINKED LIST
+    Display(head);
+    makeCycle(head,3);
     // Display(head);
-    // makeCycle(head,3);
-    // Display(head);
-    // cout<<DetectCycle(head)<<endl;
+    cout<<DetectCycle(head)<<endl;
 
     // REMOVE CYCLE IN LINKED LIST
-    makeCycle(head,3);
-    cout<<DetectCycle(head)<<endl;
-    RemoveCycle(head);
-    cout<<DetectCycle(head)<<endl;
-    Display(head);
+    // makeCycle(head,3);
+    // cout<<DetectCycle(head)<<endl;
+    // RemoveCycle(head);
+    // cout<<DetectCycle(head)<<endl;
+    // Display(head);
 
     return 0;
 }

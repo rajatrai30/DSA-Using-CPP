@@ -28,23 +28,6 @@ int Lis(vi &a, int n){
 
 
 // USING MEMOIZATION TOP - DOWN APPROACH
-// signed main()
-// {
-//     rep(i,0,N){
-//         dp[i] = -1;
-//     }
-//     int n;
-//     cin>>n;
-//     vi a(n);
-//     rep(i,0,n){
-//         cin>>a[i];
-//     }
-//     cout<<Lis(a,n-1);
-//     return 0;
-// }
-
-
-// USING TABULATION BOTTOM - UP APPROACH
 signed main()
 {
     rep(i,0,N){
@@ -56,17 +39,34 @@ signed main()
     rep(i,0,n){
         cin>>a[i];
     }
-    vi dp(n,1);
-    int ans=0;
-    rep(i,1,n){
-        rep(j,0,i){
-            if(a[i]>a[j]){
-                dp[i] = max(dp[i], 1+dp[j]);
-            }
-        }
-        ans=max(ans,dp[i]);
-    }
-    cout<<ans;
+    cout<<Lis(a,n-1);
     return 0;
 }
+
+
+// USING TABULATION BOTTOM - UP APPROACH
+// signed main()
+// {
+//     rep(i,0,N){
+//         dp[i] = -1;
+//     }
+//     int n;
+//     cin>>n;
+//     vi a(n);
+//     rep(i,0,n){
+//         cin>>a[i];
+//     }
+//     vi dp(n,1);
+//     int ans=0;
+//     rep(i,1,n){
+//         rep(j,0,i){
+//             if(a[i]>a[j]){
+//                 dp[i] = max(dp[i], 1+dp[j]);
+//             }
+//         }
+//         ans=max(ans,dp[i]);
+//     }
+//     cout<<ans;
+//     return 0;
+// }
 

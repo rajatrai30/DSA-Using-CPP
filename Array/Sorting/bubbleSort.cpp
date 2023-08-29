@@ -24,6 +24,10 @@ int main()
                 int temp=a[i];
                 a[i]=a[i+1];
                 a[i+1]=temp;
+
+                // a[i]=a[i]^a[i+1];
+                // a[i+1]=a[i]^a[i+1];
+                // a[i]=a[i]^a[i+1];
             }
         }
         count++;
