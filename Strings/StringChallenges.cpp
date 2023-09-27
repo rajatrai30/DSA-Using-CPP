@@ -8,7 +8,7 @@
 //     string a = "vnejnvejnvjevnen";
 //     for(int i=0;i<a.size();i++){
 //         if(a[i] >= 'a' && a[i] <= 'z'){
-//             a[i] -= 32;
+//             a[i] -= 32; //ASCI CHARACTERS TO GET APLHABETS FROM a-z
 //         }
 //     }
 //     cout<<a;
@@ -25,7 +25,7 @@
 //     string a = "RAJATRAIDEVELOPER";
 //     for(int i=0;i<a.size();i++){
 //         if(a[i] >= 'A' && a[i] <= 'Z'){
-//             a[i] += 32;
+//             a[i] += 32; //ASCI CHARACTERS TO GET APLHABETS FROM a-z
 //         }
 //     }
 //     cout<<a;
@@ -63,30 +63,45 @@
 // }
 
 // MAXIMUM OCCURED CHARACTER IN STRING
+// #include<iostream>
+// #include<algorithm>
+// #include<string>
+// using namespace std;
+// int main()
+// {
+//     string a = "tttttaadde";
+//     int freq[26];
+//     for(int i=0;i<26;i++){
+//         freq[i] = 0;
+//     }
+
+//     for(int i=0;i<a.size();i++){
+//         freq[a[i] - 'a']++;
+//     }
+
+//     char ans = 'a';
+//     int maxf=0;
+//     for(int i=0;i<26;i++){
+//         if(freq[i] >= maxf){
+//             maxf = freq[i];
+//             ans = i + 'a';
+//         }
+//     }
+//     cout<<maxf<<" "<<ans;
+//     return 0;
+// }
+
+// SELF KNOWLEDGE
 #include<iostream>
 #include<algorithm>
 #include<string>
 using namespace std;
 int main()
 {
-    string a = "tttttaadde";
-    int freq[26];
-    for(int i=0;i<26;i++){
-        freq[i] = 0;
-    }
+    string a = "Hello Rajat";
+    cout<<a[4];
+    cout<<a[5];
+    cout<<a[6];
 
-    for(int i=0;i<a.size();i++){
-        freq[a[i] - 'a']++;
-    }
-
-    char ans = 'a';
-    int maxf=0;
-    for(int i=0;i<26;i++){
-        if(freq[i] >= maxf){
-            maxf = freq[i];
-            ans = i + 'a';
-        }
-    }
-    cout<<maxf<<" "<<ans;
     return 0;
 }

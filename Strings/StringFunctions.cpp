@@ -21,7 +21,7 @@ int main()
 
     // COMPARE
     // string s1="abc";
-    // string s2="xyz";
+    // string s2="xzy";
     // cout<<s2.compare(s1);
 
     // COMPARE 2
