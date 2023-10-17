@@ -1,27 +1,27 @@
 // CHECK PALINDROME
 #include<iostream>
+#include<algorithm>
+#include<string>
 using namespace std;
 int main()
 {
-    int n;
-    cin>>n;
-    char a[n+1];
-    cin>>a;
-    bool check = true;
-    for(int i=0;i<n;i++){
-        if(a[i] != a[n-1-i]){
-            check = false;
-            break;
-        }
-    }
-    if(check == true){
-        cout<<"PALINDROME";
-    }
-    else
-    {
-        cout<<"NOT PALINDROME";
-    }
-    return 0;   
+	string a;
+	cin>>a;
+	bool check = true;
+	int n = a.size();
+	for(int i=0;i<n/2;i++){
+		if(a[i] != a[n-1-i]){
+			check = false;
+			break;
+		}
+	}
+	if(check){
+		cout<<"PALINDROME";
+	}
+	else{
+		cout<<"NOT PALINDROME";
+	}
+    return 0;
 }
 
 // LONGEST PALINDROME SUBSEQUENCE
