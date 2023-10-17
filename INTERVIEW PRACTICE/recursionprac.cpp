@@ -29,7 +29,7 @@ void Reverse(string s){
 using namespace std;
 int main()
 {
-    string s = "Rakat";
+    string s = "Rajat";
     Reverse(s);
     return 0;
 }

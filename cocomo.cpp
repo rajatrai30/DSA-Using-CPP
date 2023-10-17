@@ -67,21 +67,37 @@
 //     return 0;
 // }
 
+// #include<iostream>
+// #include<climits>
+// using namespace std;
+// int main()
+// {
+// 	int a,b,c;
+// 	cin>>a>>b>>c;
+// 	if(a>b && b>c){
+// 		cout<<a;
+// 	}
+// 	else if(b>a && b>c){
+// 		cout<<b;
+// 	}
+// 	else{
+// 		cout<<c;
+// 	}
+//     return 0;
+// }
+
+
 #include<iostream>
-#include<climits>
 using namespace std;
 int main()
 {
-	int a,b,c;
-	cin>>a>>b>>c;
-	if(a>b && b>c){
-		cout<<a;
-	}
-	else if(b>a && b>c){
-		cout<<b;
-	}
-	else{
-		cout<<c;
-	}
+    int n;
+    cin>>n;
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++){
+			cout<<"*";
+        }
+        cout<<endl;
+    }
     return 0;
 }
