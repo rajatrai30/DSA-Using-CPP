@@ -10,7 +10,7 @@ public:
 
 class Base2 {
 public:
-    virtual void function2() {
+    void function2() {
         cout << "Function2 from Base2" << endl;
     }
 };
@@ -19,9 +19,6 @@ class Derived : public Base1, public Base2 {
 public:
     void combinedFunction() {
         cout << "Combined Function in Derived Class" << endl;
-    }
-    void function2() override{
-        cout << "Function2 Modified and overide" << endl;
     }
 };
 
