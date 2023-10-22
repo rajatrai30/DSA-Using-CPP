@@ -48,6 +48,6 @@ int main(){
     // CALL MOVE
     MyClass obj4 = move(obj2);
     // VALUED REMAINED AFTER MOVE
-    cout<<obj4.data<<endl;
+    cout<<obj2.data<<endl;
     return 0;
 }

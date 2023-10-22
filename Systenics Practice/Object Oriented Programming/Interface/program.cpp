@@ -11,7 +11,7 @@ class Drawable{
 // CLASS HAS USED THE INTERFACE
 class Circle : public Drawable{
     public:
-        void draw(){
+        void draw() override{
             cout<<"Drawing Circle using Interface"<<endl;
         }
 };
