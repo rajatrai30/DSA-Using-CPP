@@ -15,3 +15,9 @@
 // 	    obj1.PrintFun();
 // 	}
 // }
+
+// OUTPUT:
+// WHEN WE INTIALIZE AN OBJECT, DEFAULT CONSTRUCTOR GETS CALLED FIRST.......
+// Hello World
+// Default constr called
+// Print fnn called
