@@ -1,20 +1,20 @@
 // TO REVERSE A STRING
-// #include<iostream>
-// #include<algorithm>
-// #include<string>
-// using namespace std;
-// int main()
-// {
-//     string a;
-//     cin>>a;
-//     cout<<a<<endl;
-//     int n = a.size();
-//     for (int i=0;i<n;i++)
-//     {
-//         cout<<a[n-1-i];
-//     }
-//     return 0;
-// }
+#include<iostream>
+#include<algorithm>
+#include<string>
+using namespace std;
+int main()
+{
+    string a;
+    cin>>a;
+    cout<<a<<endl;
+    int n = a.size();
+    for (int i=0;i<n;i++)
+    {
+        cout<<a[n-1-i];
+    }
+    return 0;
+}
 
 // #include<iostream>
 // #include<algorithm>
